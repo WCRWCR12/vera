@@ -1,0 +1,6 @@
+{
+  "owner": "{{OWNER_NAME}}",
+  "assistant": "{{ASSISTANT_NAME}}",
+  "timezone": "{{TIMEZONE}}",
+  "branding": true
+}

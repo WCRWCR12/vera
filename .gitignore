@@ -1,0 +1,19 @@
+# Never commit secrets or personal data
+.env
+*.env
+.token
+access.json
+approved/
+*.pem
+*.key
+# Local state
+screen/backups/
+vera/screen/backups/
+vera/screen/data/state.json
+.vera-install.json
+.backups/
+setup-progress.md
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

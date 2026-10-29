@@ -1,0 +1,18 @@
+[
+  {
+    "id": "calendar",
+    "title": "Connect your calendar and email (optional)",
+    "minutes": 3,
+    "why": "So your assistant can see when you are free and draft emails.",
+    "how": "In the Claude app: Settings, Connectors, add Google Calendar and Gmail (or Microsoft 365). You sign in yourself.",
+    "url": "https://claude.ai/settings/connectors",
+    "link_label": "Open connectors"
+  },
+  {
+    "id": "keep-awake",
+    "title": "Keep the computer awake while you want your assistant",
+    "minutes": 2,
+    "why": "Your assistant only works while this computer is on and awake.",
+    "how": "Turn off sleep while plugged in (Windows: Settings, System, Power. Mac: System Settings, Battery or Energy)."
+  }
+]

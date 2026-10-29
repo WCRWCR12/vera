@@ -1,0 +1,17 @@
+[
+  {
+    "id": "move",
+    "label": "Move for 20 minutes",
+    "why": "Energy for the afternoon"
+  },
+  {
+    "id": "plan",
+    "label": "Plan tomorrow before 6pm",
+    "why": "Start tomorrow already knowing the one thing"
+  },
+  {
+    "id": "inbox",
+    "label": "Inbox to zero once",
+    "why": "Nothing important sits unanswered"
+  }
+]
