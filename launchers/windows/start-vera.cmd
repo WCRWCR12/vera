@@ -39,6 +39,30 @@ findstr /L /C:"Bash(curl *)" "vera-settings.json" >nul || goto badsettings
 
 if not exist "%USERPROFILE%\.claude\channels\telegram\inbox" mkdir "%USERPROFILE%\.claude\channels\telegram\inbox"
 
+rem The bot can only reply once this window is signed in to the person's Claude account. Say so loudly.
+"%CLAUDE_EXE%" auth status >nul 2>&1
+if not errorlevel 1 (
+  echo   Signed in to Claude: yes
+  goto signedin
+)
+echo.
+echo   ============================================================================
+echo    NOT SIGNED IN TO CLAUDE YET
+echo    Your Telegram bot will NOT reply until this window is signed in.
+echo    Your browser will open: click Authorize, then come back here.
+echo    (Anything you sent the bot before this was never seen. Send it again after.)
+echo   ============================================================================
+echo.
+"%CLAUDE_EXE%" auth login
+"%CLAUDE_EXE%" auth status >nul 2>&1
+if not errorlevel 1 (
+  echo   Signed in to Claude: yes
+) else (
+  echo   Still not signed in. This window will ask you to sign in next: press Enter at each
+  echo   question and click Authorize in the browser.
+)
+:signedin
+echo.
 echo Starting {{ASSISTANT_NAME}} with Telegram. Leave this window open; close it to stop.
 echo The first time, this window may ask you to log in or to trust this folder: press Enter to accept.
 echo.

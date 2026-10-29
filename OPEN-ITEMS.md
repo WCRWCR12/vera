@@ -62,3 +62,8 @@ python tests/test-screen.py           # Vera Screen security and smoke test on p
 bash tests/check-docs.sh              # links, named files, no leftover guides, JSON and shell syntax
 bash tests/scan.sh --terms <file>     # secrets and personal data; keep the private terms file outside the repo
 ```
+
+## Install UX (29 Oct, Will msgs 2905/2907)
+- Fill the 12 screenshot slots in README.md: shot list in docs/SCREENSHOTS.md.
+- Supervised first-timer run (Indi) on a clean Mac and Windows login before publishing.
+- Confirm `claude auth status` / `auth login` behave as the launchers expect on a real machine.

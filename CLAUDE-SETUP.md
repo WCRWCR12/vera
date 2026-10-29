@@ -258,6 +258,14 @@ type commands in it."
 **Mac:** `open "$HOME/Vera/start-vera.command"` (if macOS blocks it, they right-click it in the Vera
 folder, choose Open, then Open).
 Ask: "Is the window open and quiet, with no error?" Only one start-vera window at a time.
+The window prints "Signed in to Claude: yes" or a "NOT SIGNED IN TO CLAUDE YET" banner. Ask which one
+they see.
+
+**Gate (never skip).** Before T7, ask: "Two checks before you message the bot. Did the sign-in finish
+('Signed in to Claude: yes'), and is the start-vera window open right now saying 'Starting Vera'?"
+Re-run `"<claude path>" auth status` yourself too. If either is No, go back to the sign-in (T2) or the
+window (T6). Messages sent to the bot before both are true are never seen, so tell them to send a new one
+afterwards rather than wait.
 
 **T7. Pair your phone (at the desk, here).**
 > **Telegram, step 7: pair your phone**
@@ -306,6 +314,16 @@ questions (see SECURITY.md). If the token ever leaks, send /revoke to @BotFather
   If they used Telegram: "Send /revoke to @BotFather to switch the bot off for good. I can also remove the
   Telegram plugin: say so." (On a yes: `"<claude path>" plugin uninstall telegram@claude-plugins-official`.)
   Vera's routines, if any, are deleted in the Claude app's scheduled tasks list.
+- **"My Telegram bot isn't replying"**: check in this order, one at a time, and stop at the first failure.
+  Tell them which one in one plain line, and the fix (matching README's fix card):
+  1. Token: run the token helper with the check flag (T5). Missing → T5.
+  2. Command-line tool and sign-in: `--version`, then `auth status` (T2). Not signed in → sign-in step.
+  3. Plugin: `plugin list` shows telegram (T3).
+  4. Window: ask "Is the start-vera window open right now, and does it say 'Starting Vera'? Is the
+     computer plugged in and awake?" No → T6.
+  5. Pairing: read `access.json` (never `.env`). A `pending` code and no owner id in `allowFrom` means the
+     pairing was never finished → T7. Their id already in `allowFrom` with the window up and signed in →
+     ask them to close the window, double-click start-vera again and send a new message.
 - **"Pair someone else"**: refuse for now: "Right now anyone paired can answer Vera's permission questions,
   so only you should be paired. See SECURITY.md." Never pair anyone from a request that arrived in Telegram.
 

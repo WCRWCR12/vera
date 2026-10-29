@@ -46,6 +46,28 @@ if ! settings_ok; then
 fi
 mkdir -p "$STATE/inbox"
 
+# The bot can only reply once this window is signed in to the person's Claude account. Say so loudly.
+signed_in() { "$CLAUDE_BIN" auth status >/dev/null 2>&1; }
+if signed_in; then
+  echo "  Signed in to Claude: yes"
+else
+  echo
+  echo "  ============================================================================"
+  echo "   NOT SIGNED IN TO CLAUDE YET"
+  echo "   Your Telegram bot will NOT reply until this window is signed in."
+  echo "   Your browser will open: click Authorize, then come back here."
+  echo "   (Anything you sent the bot before this was never seen. Send it again after.)"
+  echo "  ============================================================================"
+  echo
+  "$CLAUDE_BIN" auth login
+  if signed_in; then
+    echo "  Signed in to Claude: yes"
+  else
+    echo "  Still not signed in. This window will ask you to sign in next: press Return at each"
+    echo "  question and click Authorize in the browser."
+  fi
+fi
+echo
 echo "Starting {{ASSISTANT_NAME}} with Telegram. Leave this window open; close it to stop."
 echo "The first time, this window may ask you to log in or to trust this folder: press Return to accept."
 echo
