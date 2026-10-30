@@ -2,9 +2,9 @@
 
 **DRAFT. Not yet reviewed by a lawyer. See legal/README.md.**
 
-Last updated: {{EFFECTIVE_DATE}}
+Last updated: 30 October 2026
 
-This policy explains how System GC ({{SYSTEMGC_LEGAL_NAME}}, ABN {{SYSTEMGC_ABN}}, Queensland, Australia)
+This policy explains how System GC (Queensland, Australia)
 ("System GC", "we", "us") handles information in connection with Vera, a free, open-source AI assistant
 configuration that runs inside Claude Code on your own computer.
 
@@ -47,7 +47,7 @@ secure.
 
 ## 6. Access, correction and complaints
 To ask what we hold about you (only what you sent us directly), to correct it or to complain, email
-**{{SYSTEMGC_CONTACT_EMAIL}}**. We will respond within 30 days. If you are not satisfied, you can complain
+**info@systemgc.com.au**. We will respond within 30 days. If you are not satisfied, you can complain
 to the **Office of the Australian Information Commissioner (OAIC)**: www.oaic.gov.au, phone 1300 363 992.
 
 ## 7. Children
@@ -58,5 +58,5 @@ If we change this policy we will publish the new version in this repository and 
 top. We will not add any collection of information to Vera without saying so clearly first.
 
 ## 9. Contact
-System GC, {{SYSTEMGC_ADDRESS}}, Queensland, Australia. Email: {{SYSTEMGC_CONTACT_EMAIL}}.
+System GC, Queensland, Australia. Email: info@systemgc.com.au.
 Website: systemgc.com.au

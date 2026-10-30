@@ -1,4 +1,13 @@
-# Vera: a free AI personal assistant that lives in the Claude app
+# Vera | The ultimate life and business agent set-up
+
+**Free.** A chief of staff, PA and accountability partner that lives in the Claude app on your computer, runs a
+whole office of AI agents, and takes orders from your phone by voice note.
+
+Made by **Will** · Instagram [@will.ai.m_system](https://www.instagram.com/will.ai.m_system/) (new agents and free
+updates every week) · Built by [System GC](https://systemgc.com.au), who also set this up for businesses.
+
+---
+
 
 Vera is a chief of staff, PA and accountability partner that runs on your own computer, inside the
 Claude desktop app. You talk to her in plain words (typing or dictating, several things at once), and she:
@@ -214,3 +223,24 @@ Check these in order, and stop at the first one that's wrong:
 ---
 
 Free and open source under the MIT licence. Powered by [System GC](https://systemgc.com.au).
+
+---
+
+## Terms, disclaimer and limitation of liability
+
+By downloading, installing or using Vera you agree to the [Terms](legal/TERMS.md) and [Privacy policy](legal/PRIVACY.md).
+In short:
+
+- **Free, as is.** Vera is provided free of charge, "as is" and "as available", without warranties of any kind,
+  express or implied, including fitness for a particular purpose, accuracy, availability or freedom from errors.
+- **You are in control and responsible.** Vera runs on your computer, under your own Claude account and the
+  services you connect. You are responsible for what you ask her to do, what you approve, and for checking
+  anything she drafts, books, sends, spends or deletes before you say yes.
+- **Not professional advice.** Nothing Vera says is legal, financial, tax, medical or other professional advice.
+- **No liability.** To the maximum extent permitted by law, Will, System GC and contributors are not liable for any
+  loss or damage of any kind (direct, indirect, consequential, lost data, lost profit or otherwise) arising from
+  downloading, installing or using Vera, or from any third-party service it connects to (Anthropic/Claude,
+  Telegram, Google and others, each under their own terms).
+- **Your consumer rights.** Nothing here excludes rights you have under the Australian Consumer Law or other laws
+  that cannot be excluded; where liability can be limited, it is limited to resupplying the software (free).
+- Licensed under the [MIT License](LICENSE). Not affiliated with or endorsed by Anthropic, Meta or Telegram.

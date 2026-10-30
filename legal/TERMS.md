@@ -2,10 +2,10 @@
 
 **DRAFT. Not yet reviewed by a lawyer. See legal/README.md.**
 
-Last updated: {{EFFECTIVE_DATE}}
+Last updated: 30 October 2026
 
 These terms apply to anyone who installs or uses Vera, and are offered by System GC
-({{SYSTEMGC_LEGAL_NAME}}, ABN {{SYSTEMGC_ABN}}, Queensland, Australia) ("System GC", "we", "us").
+(Queensland, Australia) ("System GC", "we", "us").
 "Vera" means the Vera configuration in this repository (instructions, protocols, starter notes, skills,
 agent definitions, settings, installer, launchers and Vera Screen), including updates we publish.
 
@@ -68,4 +68,4 @@ Non-Excludable Rights or claims that arose before the change.
 jurisdiction of the courts of Queensland and the courts that hear appeals from them.
 8.2 If any part of these terms is invalid or unenforceable, it is read down or severed and the rest
 continues.
-8.3 Contact: {{SYSTEMGC_CONTACT_EMAIL}}. Website: systemgc.com.au
+8.3 Contact: info@systemgc.com.au. Website: systemgc.com.au

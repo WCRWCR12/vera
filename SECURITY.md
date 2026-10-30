@@ -61,8 +61,8 @@ or your computer does something you didn't ask for.
    working straight away. Make a new one later with "set up Telegram".
 3. **Look, don't delete.** `log.md` in your Vera folder shows what Vera did and when. If you think a
    password was exposed, change it from a different device first.
-4. **Report a security problem** with Vera itself: {{SECURITY_CONTACT}} (or a private security advisory on
-   {{GITHUB_REPO_URL}}).
+4. **Report a security problem** with Vera itself: info@systemgc.com.au (or a private security advisory on
+   https://github.com/WCRWCR12/vera).
 
 ---
 
@@ -132,7 +132,7 @@ write `Status: draft`; none publishes.
    chat only, and only the owner is paired, but no hook enforces it.
 6. **Supply chain:** the Telegram plugin and Claude Code update from their official sources and are not
    pinned; Bun is pinned at install (1.2.23). This repository is not signed: download it only from
-   {{GITHUB_REPO_URL}}.
+   https://github.com/WCRWCR12/vera.
 7. **Skills are installed for your whole user** (`~/.claude/skills/morning-brief`, `evening-wrap`), so other
    Claude sessions can see them too.
 8. **Vera Screen's CSP allows inline styles** (not scripts) because the page builds styled HTML.
